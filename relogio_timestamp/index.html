@@ -81,6 +81,16 @@
         .btn:active {
             transform: scale(0.95);
         }
+        .parcial{
+            background: #222;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 10px;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -88,10 +98,15 @@
         <div id="conteudo">
             <p id="timer">00:00:00</p>
         </div>
+      
         <div id="botoes">
             <button id="btn_iniciar" class="btn">Iniciar</button>
             <button id="btn_parar" class="btn">Parar</button>
+            <button id="btn_parciais" class="btn">Parciais</button>
             <button id="btn_zerar" class="btn">Zerar</button>
+        </div>
+
+        <div id="parciais">
         </div>
     </div>
     <script src="script.js"></script>
