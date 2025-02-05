@@ -1,2 +1,4 @@
+console.log("Script carregado!");
 import { Login } from "./login.js";
-Login.login('','');
+
+Login.login("123", "321");
