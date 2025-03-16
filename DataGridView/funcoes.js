@@ -1,7 +1,7 @@
 // Função de excluir linha
 export function excluirLinha(celula) {
-    const linha = celula.closest("tr"); // Encontra a linha mais próxima da célula
-    linha.remove(); // Remove a linha da tabela
+    const linha = celula.closest("tr");
+    linha.remove();
 }
 
 // Função de editar a linha
@@ -10,7 +10,7 @@ export function editarLinha(celula) {
     const celulas = linha.getElementsByTagName("td");
 
     Array.from(celulas).forEach((td, index) => {
-        if (index > 0 && index < celulas.length - 1) { // Evitando os ícones de ação
+        if (index > 0 && index < celulas.length - 1) {
             const input = document.createElement("input");
             input.value = td.innerText;
             td.innerHTML = ""; // Limpa o conteúdo da célula
@@ -28,7 +28,10 @@ export function visualizarLinha(celula) {
     let detalhes = "";
     Array.from(celulas).forEach((td, index) => {
         if (index > 0 && index < celulas.length - 1) { // Ignorando ícones de ação
-            detalhes += `<p><strong>Coluna ${index}:</strong> ${td.innerText}</p>`;
+            detalhes += `
+            <p>
+                <strong>Coluna ${index}:</strong> ${td.innerText}
+            </p>`;
         }
     });
 
