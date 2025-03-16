@@ -1,6 +1,47 @@
-*{
+/* Reset básico */
+* {
     border: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização da tabela */
+.dgv {
+    width: 100%;
+    border-collapse: collapse;
+    margin:20px 0px;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Cabeçalho da tabela */
+.dgv_titulos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(35, 143, 197);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.dgv_titulos .c1, .dgv_titulos .c2, .dgv_titulos .c3, .dgv_titulos .c4, .dgv_titulos .c5,
+.dgv_dados .c1, .dgv_dados .c2, .dgv_dados .c3, .dgv_dados .c4, .dgv_dados .c5 {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Linhas alternadas */
+.dgv_dados .dgvLinha:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.dgv_dados .dgvLinha:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Efeito hover */
+.dgv_dados .dgvLinha:hover {
+    background-color: #088;
+    color: white;
 }
